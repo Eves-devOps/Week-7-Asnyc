@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <h1>Weather Dashboard</h1>
+  <form id="search-form">
+    <input type="text" id="city-input" placeholder="Enter a city name...">
+    <button type="submit" id="search-btn">Get Weather</button>
+  </form>
+  <div id="status"></div>
+  <div id="error-msg"></div>
+
+  <!-- Spinner -->
+  <div id="spinner" style="display:none;">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Weather card -->
+  <div id="weather-card">
+    <h2 id="city-name"></h2>
+    <div class="row">
+      <span class="label">Temperature</span>
+      <span class="value" id="temp"></span>
+    </div>
+    <div class="row">
+      <span class="label">Wind Speed</span>
+      <span class="value" id="wind"></span>
+    </div>
+    <div class="row">
+      <span class="label">Condition</span>
+      <span class="value" id="condition"></span>
+    </div>
+    <button id="toggle-temp">Switch to °F</button>
+  </div>
+
+  <!-- Forecast -->
+  <div id="forecast"></div>
+
+  <!-- Recent searches -->
+  <div id="recent-searches"></div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
